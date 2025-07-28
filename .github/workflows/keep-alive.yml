@@ -17,7 +17,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Build Docker Image
-        run: docker build -t my-probe-image -f probe-action/Dockerfile .
+        run: docker build -t my-probe-image -f probe-action/Dockerfile probe-action
 
       - name: Run Docker Container
         run: docker run --rm my-probe-image

@@ -39,5 +39,8 @@ console.log(process.version);
     await checkForHibernation(frame);
   }
 
+  const newPage = await browser.newPage();
+  await newPage.goto("https://nezha-danchoi.koyeb.app");
+
   await browser.close();
 })();
